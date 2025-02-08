@@ -1,0 +1,31 @@
+from enum import Enum
+
+class Cuisine(Enum):
+    CHINESE = 'Chinese'
+    JAPANESE = 'Japanese'
+    KOREAN = 'Korean'
+    THAI = 'Thai'
+    VIETNAMESE = 'Vietnamese'
+    INDIAN = 'Indian'
+    MEXICAN = 'Mexican'
+    ITALIAN = 'Italian'
+    FRENCH = 'French'
+    SPANISH = 'Spanish'
+    GREEK = 'Greek'
+    MIDDLE_EASTERN = 'Middle Eastern'
+    AMERICAN = 'American'
+    LATIN_AMERICAN = 'Latin American'
+    AFRICAN = 'African'
+    OTHER = 'Other'
+
+class Unit(Enum):
+    MILLILITER = 'mL'
+    LITER = 'L'
+    GRAM = 'g'
+    KILOGRAM = 'kg'
+    TEASPOON = 'tsp'
+    TABLESPOON = 'tbsp'
+    OUNCE = 'oz'
+    POUND = 'lb'
+    CUP = 'cup'
+    NUMBER = 'number'
