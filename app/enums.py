@@ -16,6 +16,7 @@ class Cuisine(Enum):
     AMERICAN = 'American'
     LATIN_AMERICAN = 'Latin American'
     AFRICAN = 'African'
+    BRITISH = 'British'
     OTHER = 'Other'
 
 class Unit(Enum):

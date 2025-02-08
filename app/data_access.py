@@ -39,7 +39,6 @@ def insert_recipe(input: RecipeInput):
             session.commit()
             
         session.commit()
-    return recipe
     
 def insert_ingredient(name: str):
     ingredient = Ingredient(name=name)

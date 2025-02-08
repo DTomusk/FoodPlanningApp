@@ -16,7 +16,7 @@ class RecipeIngredient(Base):
 
     recipe_id: Mapped[int] = mapped_column(ForeignKey('recipes.id'), primary_key=True)
     ingredient_id: Mapped[int] = mapped_column(ForeignKey('ingredients.id'), primary_key=True)
-    quantity: Mapped[int] = mapped_column()
+    quantity: Mapped[float] = mapped_column()
     unit: Mapped[Unit] = mapped_column()
 
     ingredient: Mapped["Ingredient"] = relationship(lazy='joined')
@@ -38,7 +38,7 @@ class Recipe(Base):
 
 class IngredientInput(BaseModel):
     name: str
-    quantity: int
+    quantity: float
     unit: Unit
 
 class RecipeInput(BaseModel):
